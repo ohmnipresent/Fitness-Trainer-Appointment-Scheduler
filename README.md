@@ -27,7 +27,9 @@ Welcome to the Fitness Trainer Appointment Scheduling Website! This web applicat
       Delete: Confirm deletion with a notification; the appointment will be removed after approval.
    
 3. Acknowledgement Page:
+ 
   3.1. Additional content located at the bottom of the page, providing acknowledgments.
+
 
 
 # Files Included
