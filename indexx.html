@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Fitness Trainer Appointment Management</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Home Page -->
+    <div class="slides" id="home">
+        <div class="slidecol">
+            <img src="5381569.webp">
+        </div>
+        <div class="slidecol2">
+            <h1>Hey, Trainer</h1>
+            <h5>Let's Jump On To Your Fitness Training Schedule</h5>
+            <a href="#appoinments"><button type="button">Appoinments</button></a>
+        </div>
+    </div>
+    
+    <!-- Appointment Section -->
+    <section class="p-3" id="appoinments">
+
+        <!-- Home Navigation & New Appointment Button -->
+
+        <div class="row1">
+            <div class="col-12">
+                <a href="#home"><button class="button"><i class="bi bi-house"></i></button></a>
+                <button class="btn newUser" data-bs-toggle="modal" data-bs-target="#userForm">Add Appointment <i class="bi bi-person-fill-add"></i></button>
+            </div>
+        </div>
+
+        <!-- Appointments Table -->
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped table-hover mt-3 text-center table-bordered">
+                    
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Location</th>
+                            <th>Phone</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Appointment</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="data">
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- New Appointment Pop-up Form-->
+    <div class="modal fade" id="userForm">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Appointment</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="#" id="myForm">
+                        <div class="inputField">
+                            <div>
+                                <label for="fname">First Name: </label>
+                                <input type="text" name="" id="f_name" required>
+                            </div>
+                            <div>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" name="" id="l_name" required>
+                            </div>
+                            <div>
+                                <label for="location">Location: </label>
+                                <input type="text" name="" id="l_ocation" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number: </label>
+                                <input type="text" name="" id="p_hone" minlength="10" maxlength="10" required>
+                            </div>
+                            <div>
+                                <label for="date">Date: </label>
+                                <input type="date" name="" id="d_ate" required>
+                            </div>
+                            <div>
+                                <label for="time">Time: </label>
+                                <input type="time" name="" id="t_ime"required>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" form="myForm" class="btn btn-primary submit">Submit<i class="bi bi-floppy-fill"></i></button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- View Pop-up Form -->
+    <div class="modal fade" id="viewData">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-header">View Appointment</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="#" id="myForm">
+                        <div class="inputField">
+                            <div>
+                                <label for="fname">First Name: </label>
+                                <input type="text" name="" id="showFirstName" disabled>
+                            </div>
+                            <div>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" name="" id="showLastName" disabled>
+                            </div>
+                            <div>
+                                <label for="location">Location: </label>
+                                <input type="text" name="" id="showLocation" disabled>
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number: </label>
+                                <input type="text" name="" id="showPhone" minlength="10" maxlength="10" disabled>
+                            </div>
+                            <div>
+                                <label for="date">Date: </label>
+                                <input type="date" name="" id="showDate" disabled>
+                            </div>
+                            <div>
+                                <label for="time">Time: </label>
+                                <input type="time" name="" id="showTime" disabled>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Acknowlwdgement Page -->
+    <div class="acknowledgement">
+        <div class="timepass">
+            
+        </div>
+        <div class="ackcol">
+            <h1>Acknowledgement  <i class="bi bi-pencil-square"></i></h1>
+            <h6>I would like to extend my thanks to ENTNT for the opportunity to work on the "Front-End Development for Fitness Trainer Appointment Scheduling Website" assignment. This project has been an invaluable learning experience, allowing me to apply my skills in HTML, CSS, and JavaScript to create a functional and user-friendly website.</h6>
+            <h6>Sincerely,</h6>
+            <h6>Ohm Gupta</h6>
+        </div>
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
