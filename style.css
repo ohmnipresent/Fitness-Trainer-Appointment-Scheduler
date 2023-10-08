@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.slides{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    background: linear-gradient(to bottom, #A47551, #D0B49F);
+}
+
+.slides h1{
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Montserrat';
+    ;
+}
+
+.slides h5{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.slides img{
+    width: 600px;
+    align-items: center;
+}
+
+.slidecol2 button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 10px
+}
+
+
+.row1 button{
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    min-width: 60px;
+    min-height: 40px;
+}
+
+.p-3{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #D0B49F, #E4D4C8);
+}
+table{
+    background: #EFEBE0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0px;
+    border-radius: 12px 12px 0 0;
+
+}
+
+th{
+    background: #FB8DA0;
+}
+
+td{
+    background: #EFEBE0;
+    vertical-align: middle;
+}
+
+td button{
+    margin: 2px;
+}
+
+td button i{
+    font-size: 15px;   
+}
+
+.modal-header{
+    background-color: #EFD3B5;
+    color:#5F093D;
+}
+
+.modal-body form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.modal-body form .inputField{
+    flex-basis: 100%;
+    border-left: 4px groove sandybrown;
+    border-right: 4px groove sandybrown;
+    padding-left: 10px;
+
+}
+
+form .inputField > div{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+form .inputField > div label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .inputField > div input{
+    width: 50%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid navy;
+}
+
+#userForm form .inputField > div label::after{
+    content: "*";
+    color: brown;
+}
+
+#viewData form .inputField > div input{
+    color: black;
+    font-size: medium;
+}
+
+.acknowledgement{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 30%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    background: linear-gradient(to bottom, #E4D4C8, #ffffff);
+}
+
+.acknowledgement h1{
+    color: #966742;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.acknowledgement h6{
+    color: #ba8a66;
+}
