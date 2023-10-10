@@ -31,6 +31,9 @@ Welcome to the Fitness Trainer Appointment Scheduling Website! This web applicat
   3.1. Additional content located at the bottom of the page, providing acknowledgments.
 
 
+*Note: If the website does not run on chrome, download the folder (all the files) and try running indexx.html file on Safari browser*
+
+
 
 # Files Included
 
